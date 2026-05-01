@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "HealthBridge Africa",
+    "slug": "healthbridge-africa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a5c38"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.healthbridge.africa",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1a5c38"
+      },
+      "package": "com.healthbridge.africa",
+      "permissions": ["CAMERA"],
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow HealthBridge Africa to access your camera to scan patient QR codes."
+        }
+      ],
+      "@react-native-google-signin/google-signin"
+    ]
+  }
+}
